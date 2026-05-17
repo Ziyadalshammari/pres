@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitLife | Calories Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">FitLife</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="settings.html">Settings</a></li>
+        <li><a href="aboutme.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Calories Calculator</h1>
+    <p>Build your meal plan by selecting foods from the list below. The totals update automatically as you add or remove items.</p>
+    <div id="caloriesPage" class="calories-wrapper">
+  <!-- Meal list -->
+  <div class="meal-list card">
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Calories</th>
+          <th>Carbs (g)</th>
+          <th>Protein (g)</th>
+          <th>Fat (g)</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="mealTableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Selected meals -->
+  <div class="selected-meals card">
+    <h3>Your Selection</h3>
+    <ul id="selectedList"></ul>
+    <div id="totals" class="totals"></div>
+    <button class="btn btn-danger" id="clearSelected" type="button">Clear All</button>
+  </div>
+</div>
+  </main>
+  <footer>
+    <p>&copy; 2026 FitLife | CIS201</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
